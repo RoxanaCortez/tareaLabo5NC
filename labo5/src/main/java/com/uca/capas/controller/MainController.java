@@ -32,7 +32,7 @@ public class MainController {
 	
 
 	@RequestMapping("/ingresarEstudiante")
-	public ModelAndView guardarCliente(@Valid  @ModelAttribute Estudiante estudiante, BindingResult result) {
+	public ModelAndView ingresarEstudiante(@Valid  @ModelAttribute Estudiante estudiante, BindingResult result) {
 		ModelAndView mav = new ModelAndView();
 		if(result.hasErrors()) { 
 			mav.setViewName("index");
